@@ -2251,7 +2251,7 @@ public:
         }
     }
     
-    bool get_cmd(trajectory_msgs::MultiDOFJointTrajectory &cmd, geometry_msgs::Twist &gimbal) //计算获取控制命令，获得当前位置规划的运动状态cmd，和角速度gimbal
+    bool get_cmd(trajectory_msgs::MultiDOFJointTrajectory &cmd, geometry_msgs::Twist &gimbal) //计算获取控制命令，获得当前位置规划的运动状态cmd，和相机云台转向
     {
         if (!finish_first_planning)
         {
